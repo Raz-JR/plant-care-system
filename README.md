@@ -1,13 +1,3 @@
-##### Full Stack developer - Coding challenge
-
-The following Coding challenge project must be completed and sent over prior to an onsite/remote technical interview at FIIX.
-
-###### General Instructions
-
-1. There is a 1-week deadline to submit a solution, however we ask you not to spend more than a couple of hours to provide a clean and working solution.
-2. You may leave things open for discussion during the onsite/remote technical interview.
-3. Feel free to get in touch with Hazel Chan if you have any questions.
-
 ###### Project Description
 
 The goal of the challenge is to build a Plant Care system that focuses on a watering schedule.
@@ -39,7 +29,7 @@ present a time table displaying plants that have been watered, that will need wa
 ###### Submission Instructions
 1. Clone the repository
 2. Complete your project as instructed and ensure to commit all the code to your local repo.
-3. Create a git bundle and email it to Hazel Chan/Dean Delpeache.
+3. Create a git bundle and email it to us
 
 Please Note: Do not create branches and commit code to the remote repository. The repository will be cleaned up periodically and you will end up losing all your code should you push your brances and changes to it.
 
