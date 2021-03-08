@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Plant Care System</title>
+    <link th:href="@{/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css}"
+          href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"
+          rel="stylesheet" media="screen"/>
+</head>
+<body>
+<div class="container">
+    <div>
+        <h4>Upload your file</h4>
+        <table class="table table-striped">
+            <tr>
+                <td>
+                    <form method="post" th:action="@{/upload}" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="file" name="file" class="form-control-file">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Upload File</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div th:if="${not #lists.isEmpty(plants)}">
+        <h2>All Plants</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Last Watered Date</th>
+                <th>Watering frequency</th>
+                <th>Status</th>
+            </tr>
+            <tr th:each="plant : ${plants}">
+                <td th:text="${plant.id}">Id</td>
+                <td th:text="${plant.name}">Name</td>
+                <td th:text="${plant.lastWaterDate}">Last Watered Date</td>
+                <td th:text="${plant.wateringFrequency}">Watering frequency</td>
+                <td th:bgcolor="${plant.status}"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>
